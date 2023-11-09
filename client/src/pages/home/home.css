@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media screen and (max-width:600px){
+        flex-direction: column;  
+       }
+       .top{
+        display: flex;
+        @media screen and (max-width:600px){
+            flex-direction: column;
+           }
+       }
+}

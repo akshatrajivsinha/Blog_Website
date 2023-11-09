@@ -1,0 +1,178 @@
+.sidebar{
+   
+    flex:3;
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 120px;
+    height: 100%;
+
+    @media screen and (max-width:600px){
+        margin: 20px 10px;
+        position: inherit;
+       }
+    
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0px 11px 6px 0px rgba(0,0,0,0.1);
+        background-color: rgb(4, 4, 118);
+        padding: 10px;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        height: 180px;
+        overflow-y: scroll;
+        
+       
+     
+        
+        
+        
+        
+        
+        
+        
+        :hover{
+            background-color: rgb(2, 2, 54);
+            transition: 0.5s all ease;
+            border-radius: 10px;
+            scale: 1.01;
+        }
+        
+        .recentpost{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            cursor: pointer;
+
+            
+
+            .img{
+                flex: 1;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                @media screen and (max-width:600px){
+                    height: 30px;
+                    width: 30px;
+                   }
+
+            }
+
+            .postheading{
+                flex: 5;
+                width: 250px;
+                font-size: medium;
+                @media screen and (max-width:600px){
+                    font-size: small;
+                   }
+                
+                
+            }
+
+            .time{
+                flex: 5;
+                text-align: right;
+                font-size: x-small;
+                @media screen and (max-width:600px){
+                    font-size: x-small;
+                   }
+            }
+        }
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0px 11px 6px 0px rgba(0,0,0,0.1);
+        background-color: rgb(4, 4, 118);
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        padding: 5px;
+        overflow-y: scroll;
+        @media screen and (max-width:600px){
+            padding: 5px;
+           }
+        
+        .author{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: medium;
+            padding: 5px;
+            @media screen and (max-width:600px){
+                font-size: small;
+               }
+        }
+        .hr{
+            border: none;
+            border:.5px solid rgb(111, 108, 108);
+            width: 50%;
+            align-self: center;
+            @media screen and (max-width:600px){
+                border:0.1px solid rgb(111, 108, 108);
+                width: 35%;
+               }
+        }
+        .allAuthor{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+                        :hover{
+                            transition: 0.5s all ease;
+                            border-radius: 10px;
+                            scale: 1.1;
+                        }
+        }
+        .recentpost{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px 10px 10px;
+            justify-content: center;
+            align-items: center;;
+            cursor: pointer;
+            @media screen and (max-width:600px){
+                margin: 15px;
+               }
+            
+            
+            
+            
+            .img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 5px;
+                @media screen and (max-width:600px){
+                    height: 40px;
+                    width: 40px;
+                   }
+            }
+            .postheading{
+                font-size: 25px;
+                @media screen and (max-width:600px){
+                    font-size: 20px;
+                   }
+            }
+            .time{
+                font-size: x-small;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }

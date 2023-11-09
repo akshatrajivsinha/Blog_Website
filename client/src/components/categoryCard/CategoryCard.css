@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 334px;
+    width: 300px;
+
+    .container{
+        position: relative;
+        cursor: pointer;
+
+        :hover{
+            opacity: 0.9;
+        }
+        
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+
+        .h1{
+            position: absolute;
+            left: 15px;
+            top:320px;
+            color: aliceblue;
+            font-size: x-large;
+            font-family: 'Dancing Script', cursive;
+            
+        }
+    }
+}

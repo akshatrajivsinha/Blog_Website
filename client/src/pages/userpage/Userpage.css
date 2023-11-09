@@ -1,0 +1,154 @@
+.userpage{
+    display: flex;
+    height: 100%;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+        .topcontainer{
+            display: flex;
+            height: 450px;
+            gap: 30px;
+            @media screen and (max-width:600px){
+                flex-direction: column;
+                height: fit-content;
+               }
+            
+
+            .left{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: 30px;
+                margin-left: 20px;
+                padding: 0px 60px;
+                background-color: royalblue;
+                @media screen and (max-width:600px){
+                    margin-top:40px; 
+                    margin-left:0px;
+                    padding: 10px 0px;
+                    height: fit-content;
+                    width: 100%;
+                   }
+                   
+                
+                .cover{
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .h1{
+                    font-family: 'Dancing Script', cursive;
+                }
+                
+                
+                .edit{
+                    padding: 5px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    color: black;
+                    font-size: medium;
+                    background-color: rgb(149, 149, 244);
+                    cursor: pointer;
+                    font-family: 'Dancing Script', cursive;
+                
+                    :hover{
+                        background-color: white;
+                        color:black;
+                    }
+                }
+                .update{
+                    display: flex;
+                    gap: 20px;
+                
+                
+                .edit{
+                    padding: 5px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    color: black;
+                    font-size: medium;
+                    background-color: rgb(149, 149, 244);
+                    cursor: pointer;
+                    font-family: 'Dancing Script', cursive;
+
+                    :hover{
+                        background-color: white;
+                        color:black;
+                    }
+                }
+                 .delete{
+                    padding: 5px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    color: black;
+                    font-size: medium;
+                    background-color: rgb(225, 16, 16);
+                    cursor: pointer;
+                    font-family: 'Dancing Script', cursive; 
+                }
+            }
+            
+                    
+               
+            }
+
+            .right{
+                flex: 9;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+                margin-right: 20px;
+                padding: 20px;
+                gap:20px;
+                background-color: rgb(202, 202, 236);
+                @media screen and (max-width:600px){
+                    width: 100%;
+                    margin-top: 5px;
+                    margin-right: 0px;
+                    padding: 10px 0px;
+                   }
+            }
+                
+                .h1{
+                    font-family: 'Dancing Script', cursive;
+                    @media screen and (max-width:600px){
+                        font-size: 20px;
+                        margin-top: 20px;
+                       }
+                }
+                
+                .desc{
+                    width: 90%;
+                    height: 300px;
+                    padding: 20px;
+                    font-size: 25px;
+                    text-align: justify;
+                    font-family: 'Dancing Script', cursive;
+                    
+                    @media screen and (max-width:600px){
+                        font-size: 20px;
+                        margin-top: 20px;
+                        height: fit-content;
+                        padding: 5px;
+                       }
+
+            }
+        }
+        .downcontainer{
+            display: flex;
+            align-items: center;
+            
+            flex-wrap: wrap;
+            
+        }
+    }
+}
